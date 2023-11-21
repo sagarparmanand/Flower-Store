@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <nav class="navbar navbar-expand-lg navbar-light ">
+
+    <div>
+      <a class="navbar-brand" href="#home" style="font-size: 30px;" id="gg">
+        <img src="./images/rose.png" alt="" width="40px" height="40px" class="d-inline-block align-text-top">
+        Flower.
+      </a>
+    </div>
+
+    <div class="container-fluid">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#home">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#pro">Products</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#abo">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#rev">Review</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#con">Contact</a>
+          </li>
+         
+        </ul>
+       
+        <!--                                            Cart -->
+
+        <i class='bx bx-shopping-bag' id="cart-icon"></i>
+        <div class="cart">
+          <h2 class="cart-title">Your Cart</h2>
+          <div class="cart-content">
+
+          </div>
+          <div class="total">
+            <div class="total-title">Total:</div>
+            <div class="total-price">Rs 0</div>
+          </div>
+          <button type="button" class="btn-buy">Buy Now</button>
+          <i class='bx bx-x' id="close-cart"></i>
+        </div>
+        
+        <form class="d-flex">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" id="val()">
+
+          <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
+
+      </div>
+    </div>
+  </nav>
+
+  <div id="home">
+    <img src="./images/hd-wallpaper-g7888d013d_1920.jpg" alt="" style="width: 100%; height: 750px;">
+    <div class="home2">
+      <h1>Fresh flowers</h1>
+      <h3>Natural & Beautiful Flowers</h3>
+      <h6>Lorem ipsum dolor sit amet consectetur adipisicing elinde,
+        nam, facilis quis iure eveniet. Veritatis, repellat
+        cum.</h6>
+      <a class="btn btn-info" href="#pro" role="button">Shop Now</a>
+    </div>
+  </div>
+
+  <!--                                               Product -->
+
+  <div class="head" id="pro">
+    <h1>Latest Products</h1>
+  </div>
+  <div id="product">
+    <div class="container-fluid">
+      
+      <div class="card">
+        <img src="./images/flower-4638956_1920.png" alt="" class="iimmgg">
+        
+        <div class="content">
+          <div class="car"><img src="./images/heart.png" alt="" id="ch" onclick="chan()"></div>
+          <div class="ca">
+            <h2 class="add-cart">flowers</h2>
+          </div>
+        </div>
+        <h3 class="product-title">Flower Pot1</h3>
+        <h4 class="price">Rs 1700</h4>
+        <i class='bx bxs-shopping-bag add-cart'>add to cart</i>
+      </div>
+
+      <div class="card">
+        <img src="./images/cactus-4338616_1920.png" alt="" class="iimmgg">
+        
+        <div class="content">
+          <div class="car"><img src="./images/heart.png" alt="" id="ch2" onclick="cha2()"></div>
+          <div class="ca">
+            <h2 class="add-cart">flowers</h2>
+          </div>
+        </div>
+        <h3 class="product-title">Flower Pot2</h3>
+        <h4 class="price">Rs 1700</h4>
+        <i class='bx bxs-shopping-bag add-cart'>add to cart</i>
+      </div>
+
+      <div class="card">
+        <img src="./images/garden-4757264_1920.png" alt="" class="iimmgg">
+        
+        <div class="content">
+          <div class="car"><img src="./images/heart.png" alt="" id="ch3" onclick="cha3()"></div>
+          <div class="ca">
+            <h2 class="add-cart">flowers</h2>
+          </div>
+        </div>
+        <h3 class="product-title">Flower Pot 3</h3>
+        <h4 class="price">Rs 1700</h4>
+        <i class='bx bxs-shopping-bag add-cart'>add to cart</i>
+      </div>
+
+      <div class="card">
+        <img src="./images/happy-mothers-day-1372452_1920.jpg" alt="" class="iimmgg">
+        
+        <div class="content">
+          <div class="car"><img src="./images/heart.png" alt="" id="ch4" onclick="cha4()"></div>
+          <div class="ca">
+            <h2 class="add-cart">flowers</h2>
+          </div>
+        </div>
+        <h3 class="product-title">Flower Pot 4</h3>
+        <h4 class="price">Rs 1700</h4>
+        <i class='bx bxs-shopping-bag add-cart'>add to cart</i>
+      </div>
+    </div>
+
+    <div class="container-fluid">
+
+      <div class="card">
+        <img src="./images/roses-1274039_1920.jpg" alt="" class="iimmgg">
+        
+        <div class="content">
+          <div class="car"><img src="./images/heart.png" alt="" id="ch5" onclick="cha5()"></div>
+          <div class="ca">
+            <h2 class="add-cart">flowers</h2>
+          </div>
+        </div>
+        <h3 class="product-title">Flower Pot 5</h3>
+        <h4 class="price">Rs 1700</h4>
+        <i class='bx bxs-shopping-bag add-cart'>add to cart</i>
+      </div>
+
+      <div class="card">
+        <img src="./images/lavender-1727.jpg" alt="" class="iimmgg">
+        
+        <div class="content">
+          <div class="car"><img src="./images/heart.png" alt="" id="ch6" onclick="cha6()"></div>
+          <div class="ca">
+            <h2 class="add-cart">flowers</h2>
+          </div>
+        </div>
+        <h3 class="product-title">Flower Pot 6</h3>
+        <h4 class="price">Rs 1700</h4>
+        <i class='bx bxs-shopping-bag add-cart'>add to cart</i>
+      </div>
+
+      <div class="card">
+        <img src="./images/plant-pot-1455049_1920.jpg" alt="" class="iimmgg">
+        
+        <div class="content">
+          <div class="car"><img src="./images/heart.png" alt="" id="ch7" onclick="cha7()"></div>
+          <div class="ca">
+            <h2 class="add-cart">flowers</h2>
+          </div>
+        </div>
+        <h3 class="product-title">Flower Pot 7</h3>
+        <h4 class="price">Rs 1700</h4>
+        <i class='bx bxs-shopping-bag add-cart'>add to cart</i>
+      </div>
+
+      <div class="card">
+        <img src="./images/vase-3204337_1920.jpg" alt="" class="iimmgg">
+        
+        <div class="content">
+          <div class="car"><img src="./images/heart.png" alt="" id="ch8" onclick="cha8()"></div>
+          <div class="ca">
+            <h2 class="add-cart">flowers</h2>
+          </div>
+        </div>
+        <h3 class="product-title">Flower Pot 8</h3>
+        <h4 class="price">Rs 1700</h4>
+        <i class='bx bxs-shopping-bag add-cart'>add to cart</i>
+      </div>
+
+    </div>
+
+  </div>
+  <!--                                                  About Us -->
+  <div class="head" id="abo">
+    <h1>About Us</h1>
+  </div>
+  <div id="about">
+    <div class="phot">
+      <video src="./images/woman-58142.mp4" loop autoplay muted></video>
+      <div class="best">
+        <h1>Best Flower Seller</h1>
+      </div>
+    </div>
+    <div class="cont">
+      <h1>Why Choose Us</h1>
+      <h3>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facilis, dolores omnis voluptatibus repellat atque,
+        ea in nobis quaerat accusa <br> <br>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Est eum nesciunt a voluptas omnis voluptatem esse
+        libero mollitia molestias? Ea consequuntur reiciend<h3>
+    </div>
+    <button class="bt">Learn More</button>
+  </div>
+
+  <!--                                                      Review -->
+
+  <div class="head" id="rev">
+    <h1>Customer's Review</h1>
+  </div>
+  <div id="review">
+
+    <div class="cardd">
+      <div class="star">
+        <img src="./images/star.png" alt="">
+        <img src="./images/star.png" alt="">
+        <img src="./images/star.png" alt="">
+        <img src="./images/star.png" alt="">
+   
+      </div>
+      <div class="conte">
+        <h5>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Harum inventore, quae hic ex laboriosam voluptate
+          tempore dolore nulla reprehende</h5>
+          <img src="./images/john cena.jpeg" alt="" id="person">
+          <span><h2>John Cena</h2></span>
+      </div>
+    </div>
+
+    <div class="cardd">
+      <div class="star">
+        <img src="./images/star.png" alt="">
+        <img src="./images/star.png" alt="">
+        <img src="./images/star.png" alt="">
+        <img src="./images/star.png" alt="">
+        <img src="./images/star.png" alt="">
+      </div>
+      <div class="conte">
+        <h5>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Harum inventore, quae hic ex laboriosam voluptate
+          tempore dolore nulla reprehende</h5>
+          <img src="./images/roman.jpeg" alt="" id="person">
+          <span><h2>Roman Reigns</h2></span>
+      </div>
+    </div>
+
+    <div class="cardd">
+      <div class="star">
+        <img src="./images/star.png" alt="">
+        <img src="./images/star.png" alt="">
+        <img src="./images/star.png" alt="">
+        <img src="./images/star.png" alt="">
+    
+      </div>
+      <div class="conte">
+        <h5>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Harum inventore, quae hic ex laboriosam voluptate
+          tempore dolore nulla reprehende</h5>
+          <img src="./images/undert.jpeg" alt="" id="person">
+          <span><h2>Undertaker</h2></span>
+      </div>
+    </div>
+
+  </div>
+  <!--                                                        Contact -->
+  <div class="head" id="con">
+    <h1>Contact Us</h1>
+  </div>
+  <div id="contact">
+    <form id="form" action="/" class="f">
+      <div class="form-group">
+        <label for="exampleFormControlInput1">Name</label>
+        <input type="text" class="form-control" id="namee" name="namee">
+        <div class="error"></div>
+      </div>
+      <div class="form-group">
+        <label for="exampleFormControlInput1">Email address</label>
+        <input type="email" class="form-control" id="email"  name="email">
+        <div class="error"></div>
+      </div>
+      <div class="form-group">
+        <label for="exampleFormControlInput1">Number</label>
+        <input type="number" class="form-control" id="number" name="number">
+        <div class="error"></div>
+      </div>
+      <div class="form-group">
+        <label for="exampleFormControlTextarea1">Message</label>
+        <textarea class="form-control" id="message" rows="3" name="message"></textarea>
+        <div class="error"></div>
+      </div>
+      <button class="btn btn-primary" type="submit" style="margin-top: 20px; background-color: rgb(255, 95, 169);">Send
+        Message</button>
+    </form>
+    <img src="./images/planting.jpg" alt="" id="conimg" class="ims">
+    <br>
+    <hr>
+    <div class="footer">
+      <div class="qu">
+        <h3>Quick Links</h3>
+        <ul>
+          <li><a href="#home">home</a></li>
+          <li><a href="#pro">products</a></li>
+          <li><a href="#abo">about</a></li>
+          <li><a href="#rev">reviews</a></li>
+          <li><a href="#con">Contact</a></li>
+        </ul>
+      </div>
+
+      <div class="ot">
+        <h3>Extra Links</h3>
+        <ul>
+          <li><a href="">My Account</a></li>
+          <li><a href="">My Order</a></li>
+          <li><a href="">My Favorite</a></li>
+        </ul>
+      </div>
+
+      <div class="loc">
+        <h3>Locations</h3>
+        <ul>
+          <li><a href="">India</a></li>
+          <li><a href="">USA</a></li>
+          <li><a href="">Japan</a></li>
+          <li><a href="">France</a></li>
+        </ul>
+      </div>
+
+      <div class="info">
+        <h3>Contact Info</h3>
+        <ul>
+          <li>+91 45241 54875</li>
+          <li>flower@gmail.com</li>
+          <li>Mumbai, India - 400404</li>
+          <li><img src="./images/visa.png" alt=""> <img src="./images/paypal.png" alt=""> <img
+              src="./images/credit-card.png" alt=""></li>
+        </ul>
+      </div>
+
+    </div>
+  </div>
+
+  </div>
+
+
+  <script src="https://unpkg.com/scrollreveal"></script>
+
+  <script src="srcip.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
